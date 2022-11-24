@@ -22,11 +22,10 @@
         <![endif]-->
         <section class="container mt-2">
         <h1>Passagem</h1>
-            <form action="{% url 'minha_consulta' %}" method="post">
-                {% csrf_token %}
-                {{ form }}
-            <input type="submit" value="ok" class="btn btn-success">
-        </form>
+            <p> Sua Origem é: {{ form.origem.value }}</p>
+            <p> Seu Destino é: {{ form.destino.value }}</p>
+            <p> Sua Data de Ida: {{ form.data_ida.value }}</p>
+            <p> Sua Data de Volta: {{ form.data_volta.value }}</p>
         </section>
         <script src="" async defer></script>
     </body>
