@@ -2,7 +2,7 @@
 {% block content %}
 {% load widget_tweaks %}
 
-<section class="container col-8">
+<section class="container col-4">
             <form action="{% url 'minha_consulta' %}" method="post">
                 {% csrf_token %}
                 {% for field in form.visible_fields %}

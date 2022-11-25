@@ -1,5 +1,5 @@
 from django import forms
-from bootstrap_datepicker_plus.widgets import DatePickerInput
+from bootstrap_datepicker_plus.widgets import DatePickerInput, TimePickerInput, DateTimePickerInput
 from datetime import datetime
 from passagens.classe_viagem import tipos_de_classe
 from passagens.validation import *
