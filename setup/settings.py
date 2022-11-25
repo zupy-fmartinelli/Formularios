@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     "passagens",
-    "tempus_dominus",
+    "bootstrap_datepicker_plus",
     'widget_tweaks',
     "django.contrib.admin",
     "django.contrib.auth",

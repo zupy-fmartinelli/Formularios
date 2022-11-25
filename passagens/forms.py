@@ -1,5 +1,5 @@
 from django import forms
-from tempus_dominus.widgets import DatePicker
+from bootstrap_datepicker_plus.widgets import DatePickerInput
 from datetime import datetime
 from passagens.classe_viagem import tipos_de_classe
 from passagens.validation import *
@@ -12,8 +12,8 @@ class PassagemForms(forms.ModelForm):
         fields = '__all__'
         labels = {'data_ida': 'Data de Ida', 'data_volta':'Data de Volta', 'informacoes':'Informações', 'classe_viagem':'Classe do Vôo'}
         widgets = {
-            'data_ida':DatePicker(),
-            'data_volta':DatePicker(),
+            'data_ida':DatePickerInput(),
+            'data_volta':DatePickerInput(),
         }
     
     
